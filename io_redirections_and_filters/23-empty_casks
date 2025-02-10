@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -empty -o -type d -empty | sed 's|^\./||'
+find . -empty -print | rev | cut -d'/' -f1 | rev
