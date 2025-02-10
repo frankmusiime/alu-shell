@@ -1,4 +1,5 @@
 #!/user/bin/env bash
+#using while to print 10 best schools
 count=1
 while [ $count -le 10 ]
 do

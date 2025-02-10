@@ -1,4 +1,5 @@
 #!/user/bin/env bash
+#script creates a story using password fields 
 while IFS=: read -r username _ userid groupid _ home shell; do
   password="********
   user_info="Info about the user"
