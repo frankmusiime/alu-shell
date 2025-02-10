@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n +2 "${1:-/dev/stdin}" | cut -d', ' -f1 | sort | uniq -c | sort -nr | head -11 | rev
+awk -F'\t' '{print $1}' | sort | uniq -c | sort -nr | head -n 11
