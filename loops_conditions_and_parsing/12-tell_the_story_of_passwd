@@ -1,0 +1,9 @@
+#!/user/bin/env bash
+while IFS=: read -r username _ userid groupid _ home shell; do
+  password="********
+  user_info="Info about the user"
+
+  echo "The user $username is part of the $groupid gang, lives in $home and rides $shell."
+  echo "USER ID's placname is part of the $groupid gang, lives in $home and rides $shell."
+  echo "--------------------"
+done < /etc/passwd

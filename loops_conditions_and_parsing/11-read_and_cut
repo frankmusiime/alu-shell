@@ -1,0 +1,8 @@
+#!/user/bin/env bash
+while IFS=: read -r username _ userid _ _ home _; do
+  # Display the required information: username, user id, home directory
+  echo "Username: $username"
+  echo "User ID: $userid"
+  echo "Home Directory: $home"
+  echo "--------------------"  # Separator for better readability
+done < /etc/passwd
