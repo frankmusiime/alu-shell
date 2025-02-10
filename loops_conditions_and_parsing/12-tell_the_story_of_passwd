@@ -1,13 +1,7 @@
 #!/usr/bin/env bash
-# Script creates a story using password fields 
+# Script creates a story using password fields
 
-while IFS=: read -r username _ userid groupid _ home shell; do
-    password="********"  # Placeholder for the password
-    user_info="Info about the user"  # Placeholder for additional user info
-
-    # Print the story in the requested format
-    echo "The user $username is part of the $groupid gang, lives in $home and rides $shell."
-    echo "USER ID's place is protected by the passcode $password, more info about the user here: $user_info"
-    echo "--------------------"
+while IFS=: read -r f1 f2 f3 f4 f5 f6 f7; do
+    echo "The user $f1 is part of the $f4 gang, lives in $f6 and rides $f7. $f3's place is protected by the passcode $f2, more info about the user here: $f5"
 done < /etc/passwd
 
