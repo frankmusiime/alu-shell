@@ -1,4 +1,4 @@
-#!/user/bin/env bash
+#!/usr/bin/env bash
 #using case and while for iteration
 n=1
 while [ $n -le 20 ]

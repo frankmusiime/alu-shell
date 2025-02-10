@@ -1,4 +1,4 @@
-#!/user/bin/env bash
+#!/usr/bin/env bash
 #information on school file
 for i in {1..100}
 do
