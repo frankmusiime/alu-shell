@@ -6,7 +6,7 @@ do
   minute=1
   while [ $minute -le 59 ]
   do
-    echo "Time: $hour:$minute"
+    echo "Time: $minute"
     ((minute++))
   done
   ((hour++))

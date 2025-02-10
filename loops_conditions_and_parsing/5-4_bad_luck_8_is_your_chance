@@ -1,4 +1,4 @@
-#!?usr/bin/env bash
+#!usr/bin/env bash
 #changing 8th and 4th output
 count=1
 while [ $count -le 10 ]
